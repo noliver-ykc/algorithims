@@ -26,5 +26,5 @@
 
  var containsDuplicate = function(nums) {
   const nums_unique = new Set (nums)
-  return nums_unique == nums ? false : true
+  return nums_unique.size == nums.length ? false : true
 };
