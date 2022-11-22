@@ -10,11 +10,12 @@
 
 // - This function accepts a sorted array and a value
 // - Create a left pointer at the start of the array, and a right pointer at the end of the array
-// - While the left pointer comes before the right pointer:
-//     - Create a pointer in the middle
-//     - If you find the value you want, return the index
-//     - If the value is too large, move the right pointer down
-// - If you never find the value return -1
+// - Create a pointer in the middle (floor)
+// - While the left pointer comes before the right pointer and mid =! goal
+//      - if the goal is less than arr[middle] move the end point to middle
+//      - if the goal is bigger than arr[middle] move the start point to the middle
+//      - update the middle
+// - when the while loop ends, return the middle else If you never find the value return -1
 
 // **sample:** 
 
