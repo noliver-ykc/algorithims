@@ -27,3 +27,7 @@ function bubbleSort(arr){
 }
 
 bubbleSort([8,1,2,3,4,5,6,7]);
+
+// **Time Complexity**: O(n2)
+
+// **Space Complexity**: O(1)
