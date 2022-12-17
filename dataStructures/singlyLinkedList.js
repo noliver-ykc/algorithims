@@ -67,10 +67,19 @@ class SinglyLinkedList{
     let counter = 0;
     let current = this.head;
     while(counter !== index){
-        current = current.next;
-        counter++;
+      current = current.next;
+      counter++;
     }
     return current;
+  }
+  set(value, index){
+    let select_node = this.get(index)
+    if(!select_node){
+      return false;
+    } else {
+      select_node.val = value;
+      return true;
+    }
   }
 }
 
